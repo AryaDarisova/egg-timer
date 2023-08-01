@@ -48,6 +48,9 @@
                                                         <buttonConfiguration key="configuration" style="plain" title="Soft">
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="hardnessSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PBF-hQ-YkC"/>
+                                                        </connections>
                                                     </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="soft_egg" translatesAutoresizingMaskIntoConstraints="NO" id="vNV-Cp-B2I">
                                                         <rect key="frame" x="0.0" y="0.0" width="104.33333333333333" height="252.33333333333334"/>
@@ -73,6 +76,9 @@
                                                         <buttonConfiguration key="configuration" style="plain" title="Medium">
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="hardnessSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VFe-i7-vM5"/>
+                                                        </connections>
                                                     </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="medium_egg" translatesAutoresizingMaskIntoConstraints="NO" id="4TK-ER-ojn">
                                                         <rect key="frame" x="0.0" y="0.0" width="104.33333333333333" height="252.33333333333334"/>
@@ -98,6 +104,9 @@
                                                         <buttonConfiguration key="configuration" style="plain" title="Hard">
                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="hardnessSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bEp-O6-aVq"/>
+                                                        </connections>
                                                     </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hard_egg" translatesAutoresizingMaskIntoConstraints="NO" id="Ftk-YH-faS">
                                                         <rect key="frame" x="0.0" y="0.0" width="104.33333333333333" height="252.33333333333334"/>
@@ -118,6 +127,21 @@
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v7z-zj-GFN" userLabel="Progressbar">
                                         <rect key="frame" x="0.0" y="506.66666666666657" width="353" height="252.33333333333331"/>
+                                        <subviews>
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="Cth-zA-OMS">
+                                                <rect key="frame" x="50" y="123.66666666666674" width="253" height="6"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="5" id="IFk-xf-82h"/>
+                                                </constraints>
+                                                <color key="progressTintColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.90980392156862744" alpha="0.89803921568627454" colorSpace="calibratedRGB"/>
+                                                <color key="trackTintColor" red="0.19215686274509802" green="0.20784313725490194" blue="0.1803921568627451" alpha="0.89803921568627454" colorSpace="calibratedRGB"/>
+                                            </progressView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Cth-zA-OMS" firstAttribute="leading" secondItem="v7z-zj-GFN" secondAttribute="leading" constant="50" id="6Uo-qq-ONP"/>
+                                            <constraint firstItem="Cth-zA-OMS" firstAttribute="centerY" secondItem="v7z-zj-GFN" secondAttribute="centerY" id="DK0-WT-hZX"/>
+                                            <constraint firstAttribute="trailing" secondItem="Cth-zA-OMS" secondAttribute="trailing" constant="50" id="MWV-T3-S7E"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -136,6 +160,10 @@
                             <constraint firstAttribute="trailing" secondItem="TUV-Ti-7iy" secondAttribute="trailing" constant="20" id="wsi-nN-Z5Y"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="progressBar" destination="Cth-zA-OMS" id="STh-lV-twy"/>
+                        <outlet property="topLabel" destination="2Eo-Ey-lGS" id="xQ3-nx-1iv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

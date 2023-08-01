@@ -13,6 +13,7 @@
 		E7175E4A2A786AA500FF0C1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7175E482A786AA500FF0C1A /* Main.storyboard */; };
 		E7175E4C2A786AA800FF0C1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7175E4B2A786AA800FF0C1A /* Assets.xcassets */; };
 		E7175E4F2A786AA800FF0C1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7175E4D2A786AA800FF0C1A /* LaunchScreen.storyboard */; };
+		E7175E572A792F9600FF0C1A /* alarm_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E7175E562A792F9600FF0C1A /* alarm_sound.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E7175E4B2A786AA800FF0C1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7175E4E2A786AA800FF0C1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7175E502A786AA800FF0C1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7175E562A792F9600FF0C1A /* alarm_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm_sound.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		E7175E412A786AA400FF0C1A /* egg-timer */ = {
 			isa = PBXGroup;
 			children = (
+				E7175E562A792F9600FF0C1A /* alarm_sound.mp3 */,
 				E7175E422A786AA400FF0C1A /* AppDelegate.swift */,
 				E7175E442A786AA400FF0C1A /* SceneDelegate.swift */,
 				E7175E462A786AA400FF0C1A /* ViewController.swift */,
@@ -127,6 +130,7 @@
 			files = (
 				E7175E4F2A786AA800FF0C1A /* LaunchScreen.storyboard in Resources */,
 				E7175E4C2A786AA800FF0C1A /* Assets.xcassets in Resources */,
+				E7175E572A792F9600FF0C1A /* alarm_sound.mp3 in Resources */,
 				E7175E4A2A786AA500FF0C1A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
