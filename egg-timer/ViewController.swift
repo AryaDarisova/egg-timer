@@ -14,8 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var progressBar: UIProgressView!
     
     let eggTimes = [
-        "Soft": 1,
-        "Medium": 7,
+        "Soft": 5,
+        "Medium": 8,
         "Hard": 12
     ]
     var player: AVAudioPlayer?
